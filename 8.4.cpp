@@ -1,4 +1,4 @@
-// Binary search array
+// Reverse alternate in array
 #include <iostream>
 using namespace std;
 
