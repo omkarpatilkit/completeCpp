@@ -5,3 +5,5 @@ Youtube course from Apna College
 Syllabus: 
 lec 11 - 4.2 patterns;
 lec 12 - 5.1 Numbers operations binary;
+8 - array operations 
+9 - binary operations
