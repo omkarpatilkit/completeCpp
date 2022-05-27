@@ -6,7 +6,6 @@ int peakByBinary(int a[], int size)
 
     int l = 0;
     int r = size - 1;
-    int comp = a[0];
     while (l <= r)
     {
         int mid = l + (r - l) / 2;
