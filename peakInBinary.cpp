@@ -9,15 +9,15 @@ int peakByBinary(int a[], int size)
     while (l <= r)
     {
         int mid = l + (r - l) / 2;
-        if (a[mid] > a[mid - 1])
+        if (a[mid] < a[mid + 1])
         {
             l = mid + 1;
         }
-        else if (a[mid] < a[mid - 1])
+        else
         {
-            r = mid - 1;
+            r = mid;
         }
-        else if (l == r)
+        if (l == r)
         {
             return l;
         }
