@@ -27,27 +27,29 @@ int sqRoot(int a)
     return ans;
 }
 
-double prciseSqRoot(int a)
+double prciseSqRoot(int a, int precision)
 {
     int temp = sqRoot(a);
     double ans = 0;
+    double factor = 1;
 
-    for (double x = 0.1; (x + (double)temp) * (x + (double)temp) <= a; x = x + 0.1)
+    for (int i = 1; i <= precision; i++)
     {
-        ans = x + (double)temp;
-    }
-    temp = ans;
-    for (double x = 0.01; (x + (double)temp) * (x + (double)temp) <= a; x = x + 0.01)
-    {
-        ans = x + (double)temp;
+        factor = factor / 10;
+        for (double x = factor; (x + (double)temp) * (x + (double)temp) <= a; x = x + factor)
+        {
+            ans = x + (double)temp;
+        }
+        temp = ans;
     }
     return ans;
 }
 
 int main()
 {
-    int a = 30;
-    double res = prciseSqRoot(a);
+    int a = 32;
+
+    double res = prciseSqRoot(a, 3);
     cout << res << endl;
     return 0;
 }
