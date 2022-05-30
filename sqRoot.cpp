@@ -4,7 +4,7 @@ using namespace std;
 int sqRoot(int a)
 {
 
-    int l = 0;
+    int l = 2;
     int r = a / 2;
     int ans = 0;
     while (l <= r)
@@ -29,7 +29,7 @@ int sqRoot(int a)
 
 int main()
 {
-    int a = 30;
+    int a = 50;
     int res = sqRoot(a);
     cout << res << endl;
     return 0;
