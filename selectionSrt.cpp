@@ -39,7 +39,7 @@ void selctionSrt(int a[], int size)
 int main()
 {
 
-    int a[] = {7,6,4,3,7,9,1};
+    int a[] = {7, 6, 4, 3, 7, 9, 1};
     int size = sizeof(a) / sizeof(a[0]);
     printArray(a, size);
     cout << endl;
