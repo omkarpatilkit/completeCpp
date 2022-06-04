@@ -7,8 +7,8 @@ void printArray(int a[], int size)
     {
         cout << a[i] << " ";
     }
+    cout << endl;
 }
-
 void swap(int *a, int *b)
 {
     int temp;
@@ -17,32 +17,32 @@ void swap(int *a, int *b)
     *b = temp;
 }
 
-void selctionSrt(int a[], int size)
+void selectionSort(int a[], int size)
 {
-    for (int i = 0; i < (size - 1); i++)
+    for (int i = 0; i < size - 1; i++)
     {
-        int mini = a[i];
+        int temp = a[i];
         int index = i;
-        for (int j = i; j < size; j++)
+        for (int j = i + 1; j < size; j++)
         {
-            if (mini >= a[j])
+            if (temp > a[j])
             {
-                mini = a[j];
                 index = j;
+                temp = a[j];
             }
         }
-        swap(&(a[index]), &(a[i]));
+
+        swap(&a[i], &a[index]);
     }
-    printArray(a, size);
 }
 
 int main()
 {
-
-    int a[] = {7, 6, 4, 3, 7, 9, 1};
+    int a[] = {7, 5, 9, 4, 8, 6};
     int size = sizeof(a) / sizeof(a[0]);
+
     printArray(a, size);
-    cout << endl;
-    selctionSrt(a, size);
+    selectionSort(a, size);
+    printArray(a, size);
     return 0;
 }
