@@ -3,3 +3,5 @@
 *.dll
 *.so
 *.dylib
+*a.exe
+*a
