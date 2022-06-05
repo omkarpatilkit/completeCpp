@@ -20,5 +20,18 @@ int main()
     cout << "Capacity is " << v.capacity() << endl; // capacity is for available space
     cout << "Size is " << v.size() << endl;         // size is for allocated space
 
+    cout << "First element is " << v.front() << endl; //
+    cout << "Last element is " << v.back() << endl;   //
+
+    vector<int> a(5, 1);
+
+    vector<int> last(a); // copy all from a
+
+    for (int i : last)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
+
     return 0;
 }
