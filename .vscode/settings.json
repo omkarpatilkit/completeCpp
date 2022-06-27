@@ -6,6 +6,19 @@
     "iostream": "cpp",
     "random": "cpp",
     "array": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "*.tcc": "cpp",
+    "string": "cpp",
+    "unordered_map": "cpp",
+    "memory": "cpp",
+    "optional": "cpp",
+    "string_view": "cpp",
+    "fstream": "cpp",
+    "istream": "cpp",
+    "vector": "cpp",
+    "sstream": "cpp",
+    "streambuf": "cpp",
+    "functional": "cpp",
+    "tuple": "cpp"
   }
 }
